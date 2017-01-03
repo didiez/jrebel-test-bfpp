@@ -4,10 +4,13 @@
 
     <h:head>
         <title>JRebel reload test</title>
+        <meta http-equiv="refresh" content="1" />
     </h:head>
 
     <h:body>
-        <h:outputText value="#{indexBean.hello()}" />
+        <h1>Make some changes in <code>IndexBean.java</code> to reproduce the problem.</h1>
+        <p><h:outputText value="#{indexBean.hello()}" /></p>        
+        Updated: <h:outputText value="#{now}" />        
     </h:body>
 
 </html>
